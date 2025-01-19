@@ -103,7 +103,7 @@
 &kp GRAVE   &kp B        &kp Y            &kp O         &kp U              &kp SQT    &mt LS(LEFT_BRACKET) LEFT_BRACKET                                                             &mt LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp SEMI    &kp L               &kp D         &kp W            &kp V         &kp Z
 &caps_word  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &kp COMMA                          &kp K_COPY  &kp K_PASTE      &kp K_PLAY_PAUSE  &kp K_NEXT  &kp EQUAL                            &kp PERIOD  &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N   &kp Q
 &kp LSHFT   &kp G        &kp X            &kp J         &kp K              &kp MINUS                                                 &kp HOME         &kp END                                                            &kp FSLH    &kp R               &kp M         &kp F            &kp P         &kp RSHFT
-&mo 2       &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &kp BSPC                           &kp DEL     &kp ESC          &kp TAB           &kp RET     &kp SPACE                                        &kp LS(LPAR)        &kp LBKT      &kp RBKT         &kp LS(RPAR)  &kp N0
+&mo 2       &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &kp BSPC                           &kp DEL     &kp ESC          &kp TAB           &kp RET     &lt 4 SPACE                                      &kp LS(LPAR)        &kp LBKT      &kp RBKT         &kp LS(RPAR)  &kp N0
             >;
         };
 
@@ -139,11 +139,11 @@
 
         symbol {
             bindings = <
-&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp            &kp      &kp            &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp       &kp  &kp  &kp      &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
+&none            &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA     &none                                                                 &none  &none  &none  &none  &none  &none  &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT               &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION  &none                                                                 &none  &none  &none  &none  &none  &none  &none
+&kp HASH         &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &none          &kp NON_US_BACKSLASH  &kp PERIOD         &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH                                          &kp PERCENT        &none                &none  &none  &none  &none  &none  &none
+&kp AT_SIGN      &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp BACKSPACE  &kp COLON             &kp SEMICOLON      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
