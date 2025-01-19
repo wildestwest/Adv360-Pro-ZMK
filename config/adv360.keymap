@@ -99,11 +99,11 @@
 
         default_layer {
             bindings = <
-&lt 1 ESCAPE        &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5                     &mt F11 LEFT_PARENTHESIS                                                                   &mt F12 RIGHT_PARENTHESIS            &mt LS(NUMBER_6) NUMBER_6         &mt LS(NUMBER_7) N7  &mt LS(N8) N8        &mt LS(N9) N9            &mt LS(N0) N0       &caps_word
-&kp TAB             &kp Q                      &kp W                      &kp F                      &kp P                      &kp B                             &mt LS(LEFT_BRACKET) LEFT_BRACKET                                                          &mt LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp J                             &kp L                &kp U                &kp Y                    &mt LS(SEMI) SEMI   &mt TILDE GRAVE
-&kp DEL             &hml LCTRL A               &hml LEFT_ALT R            &hml LEFT_COMMAND S        &hml LEFT_SHIFT T          &hmlshift LS(LC(LG(LEFT_ALT))) G  &kp MINUS                          &kp LG(C)  &kp LG(V)      &kp LS(LG(C))  &kp RIGHT_ALT  &kp EQUAL                            &hmrshift LS(LC(LG(LEFT_ALT))) M  &hmr RIGHT_SHIFT N   &hmr LEFT_COMMAND E  &hmr LEFT_ALT I          &hmr LCTRL O        &kp BSPC
-&mt LEFT_SHIFT SQT  &kp Z                      &kp X                      &kp C                      &kp D                      &kp V                                                                           &kp HOME       &kp END                                                            &kp K                             &kp H                &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH  &mt RIGHT_SHIFT DOUBLE_QUOTES
-&mo 2               &kp LC(LS(TAB))            &kp PAGE_DOWN              &kp PG_UP                  &kp LC(TAB)                                                  &mo 1                              &kp SPACE  &kp SQT        &kp LS(DQT)    &kp ENTER      &kp LS(LA(LC(LG(ENTER))))                                              &kp LEFT             &kp DOWN             &kp UP                   &kp RIGHT           &kp BACKSLASH
+&kp EQUAL   &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &mt F11 LEFT_PARENTHESIS                                                                      &mt F12 RIGHT_PARENTHESIS            &kp N6      &kp N7              &kp N8        &kp N9           &kp N0        &kp BSLH
+&kp GRAVE   &kp B        &kp Y            &kp O         &kp U              &kp SQT    &mt LS(LEFT_BRACKET) LEFT_BRACKET                                                             &mt LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp SEMI    &kp L               &kp D         &kp W            &kp V         &kp Z
+&caps_word  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &kp COMMA                          &kp K_COPY  &kp K_PASTE      &kp K_PLAY_PAUSE  &kp K_NEXT  &kp EQUAL                            &kp PERIOD  &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N   &kp Q
+&kp LSHFT   &kp G        &kp X            &kp J         &kp K              &kp MINUS                                                 &kp HOME         &kp END                                                            &kp FSLH    &kp R               &kp M         &kp F            &kp P         &kp RSHFT
+&mo 2       &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &kp BSPC                           &kp DEL     &kp ESC          &kp TAB           &kp RET     &kp SPACE                                        &kp LS(LPAR)        &kp LBKT      &kp RBKT         &kp LS(RPAR)  &kp N0
             >;
         };
 
@@ -124,6 +124,26 @@
 &none   &kp PLUS   &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp EQUAL     &none         &none   &none      &none  &none   &none     &kp EQUAL  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp PLUS      &none
 &none   &kp MINUS  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &none                               &none      &none                    &none      &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp MINUS     &none
 &trans  &none      &none                      &none                      &none                                    &none         &kp N0  &none      &none  &kp N0  &none                &none                      &none                      &none                      &none         &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp F1  &kp F2     &kp F3  &kp F4  &kp F5  &kp F6  &kp F7                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1  &kp N2     &kp N3  &kp N4  &kp N5  &kp N6  &kp N7                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp T   &kp J      &kp Q   &kp W   &kp E   &kp R   &kp N8     &kp ESC   &kp RET      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp G   &kp LSHFT  &kp A   &kp S   &kp D   &kp F                        &kp I        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp V   &kp LCTRL  &kp Z   &kp X   &kp C           &kp SPACE  &kp LALT  &kp TAB      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp            &kp      &kp            &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp       &kp  &kp  &kp      &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
             >;
         };
     };
