@@ -20,16 +20,6 @@
 
         #endif
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -53,32 +43,6 @@
             quick-tap-ms = <125>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33 47 48 49 50 51 61 62 63 64>;
-            hold-trigger-on-release;
-        };
-
-        hmlshift: hmlshift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMLSHIFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 35 36 52 66 65 67>;
-            hold-trigger-on-release;
-        };
-
-        hmrshift: hmrshift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMRSHIFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 68 70 69 38>;
             hold-trigger-on-release;
         };
     };
@@ -135,6 +99,16 @@
 &kp HASH         &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &none          &kp NON_US_BACKSLASH  &kp PERIOD         &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH                                          &kp PERCENT        &none                &none  &none  &none  &none  &none  &none
 &kp AT_SIGN      &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp BACKSPACE  &kp COLON             &kp SEMICOLON      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        cursor {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &trans                       &trans                    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &mt LS(LC(C_AC_UNDO)) LC(Z)  &kp LS(LC(V))             &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp C_AC_CUT  &kp LEFT                     &kp UP                    &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                        &mt C_AC_COPY LS(LC(C))      &mt C_AC_PASTE LS(LC(V))  &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                                     &trans                    &trans    &trans     &trans  &trans
             >;
         };
     };
