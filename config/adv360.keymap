@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -38,7 +39,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 35 36 52 66 65 67>;
+            hold-trigger-key-positions = <8 9 10 11 12 13 22 23 24 25 26 27 40 41 42 43 44 45 54 55 56 57 58 71 72 73 74>;
             hold-trigger-on-release;
         };
 
@@ -51,7 +52,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 68 70 69 38>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33 47 48 49 50 51 61 62 63 64>;
             hold-trigger-on-release;
         };
 
@@ -99,11 +100,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL      &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &kp F7                                                                       &kp C_VOLUME_UP    &kp N6      &kp N7              &kp N8        &kp N9           &kp N0        &kp BSLH
-&kp GRAVE      &kp B        &kp Y            &kp O         &kp U              &kp SQT    &bt BT_NXT                                                                   &kp C_VOLUME_DOWN  &kp SEMI    &kp L               &kp D         &kp W            &kp V         &kp Z
-&caps_word     &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &bl BL_TOG  &kp C_AC_COPY  &kp C_AC_PASTE      &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE         &kp PERIOD  &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N   &kp Q
-&kp C_AC_UNDO  &kp G        &kp X            &kp J         &kp K              &kp MINUS                             &kp HOME            &kp END                                          &kp FSLH    &kp R               &kp M         &kp F            &kp P         &tog 1
-&kp C_AC_REDO  &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &kp BSPC    &kp DEL        &kp ESC             &kp TAB           &kp RET     &lt 3 SPACE                    &kp LS(LPAR)        &kp LBKT      &kp RBKT         &kp LS(RPAR)  &tog 2
+&kp EQUAL      &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &kp F7                                                                         &kp C_VOLUME_UP    &kp N6      &kp N7              &kp N8        &kp N9           &kp N0        &kp BSLH
+&kp GRAVE      &kp B        &kp Y            &kp O         &kp U              &kp SQT    &bt BT_NXT                                                                     &kp C_VOLUME_DOWN  &kp SEMI    &kp L               &kp D         &kp W            &kp V         &kp Z
+&caps_word     &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &out OUT_TOG  &kp C_AC_COPY  &kp C_AC_PASTE      &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE         &kp PERIOD  &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N   &kp Q
+&kp C_AC_UNDO  &kp G        &kp X            &kp J         &kp K              &kp MINUS                               &kp HOME            &kp END                                          &kp FSLH    &kp R               &kp M         &kp F            &kp P         &tog 1
+&kp C_AC_REDO  &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &kp BSPC      &kp DEL        &kp ESC             &kp TAB           &kp RET     &lt 3 SPACE                    &kp LS(LPAR)        &kp LBKT      &kp RBKT         &kp LS(RPAR)  &tog 2
             >;
         };
 
