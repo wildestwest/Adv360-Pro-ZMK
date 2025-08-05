@@ -54,10 +54,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <39 40 41 42 43 44 45 70 69>;
+            hold-trigger-key-positions = <40 70 69 41 23 22 50 49 31 32>;
         };
 
         layer_tap_symbol: layer_tap_symbol {
@@ -66,10 +66,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+            hold-trigger-key-positions = <15 16 17 18 32 31 30 29 47 48 49 50 23 41 55 56 42 24 25 43 57 58 44 26 65 66 67>;
         };
 
         layer_tap_num: layer_tap_num {
@@ -78,8 +78,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <8 9 10 11 12 22 23 24 25 26 40 41 42 43 44 54 55 56 57 58 71 72 73 74 69 70 68>;
         };
@@ -90,8 +90,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15 29 30 16 17 31 32 18 19 33 22 40 41 23 24 42 25 43 26 44>;
         };
@@ -126,7 +126,7 @@
             bindings = <
 &trans       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &trans                                                &trans           &kp F6  &kp F7      &kp F8             &kp F9        &kp F10                      &trans
 &trans       &trans        &trans        &trans        &trans        &trans  &trans                                                &trans           &trans  &trans      &trans             &trans        &trans                       &trans
-&trans       &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans      &trans  &trans      &trans           &trans  &trans      &trans             &trans        &trans                       &bt BT_CLR
+&none        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans      &trans  &trans      &trans           &trans  &trans      &trans             &trans        &trans                       &bt BT_CLR
 &bootloader  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                               &trans  &trans      &trans             &trans        &mt LS(BACKSLASH) BACKSLASH  &bootloader
 &bootloader  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &bt BT_SEL 0  &trans      &tog 1  &bl BL_TOG  &rgb_ug RGB_TOG          &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT                   &bootloader
             >;
@@ -135,7 +135,7 @@
         symbol {
             bindings = <
 &none  &none            &none          &none             &none       &none  &none                                                  &none  &none  &none        &none                 &none                  &none        &none
-&none  &kp TILDE        &kp LESS_THAN  &kp GREATER_THAN  &kp AMPS    &none  &none                                                  &none  &none  &kp LS(TAB)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT  &none
+&none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp AMPS    &none  &none                                                  &none  &none  &kp LS(TAB)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT  &none
 &none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS          &kp EQUAL   &none  &none          &none      &none          &none  &none  &none  &none  &kp PIPE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &none
 &none  &kp CARET        &kp BACKSLASH  &kp POUND         &kp DOLLAR  &none                            &none          &none                &none  &kp TAB      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT       &none
 &none  &none            &none          &none             &none              &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none         &none        &none                 &none                  &none        &none
@@ -164,11 +164,11 @@
 
         workspaces {
             bindings = <
-&trans  &trans          &trans          &trans          &trans          &trans      &trans                                      &trans  &trans          &trans          &trans          &trans          &trans          &trans
-&trans  &kp LS(LG(N1))  &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp N5      &trans                                      &trans  &kp LS(LG(N6))  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LS(LG(N0))  &trans
-&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(N6)      &kp LG(N7)      &kp LG(N8)      &kp LG(N9)      &kp LG(N0)      &trans
-&trans  &trans          &trans          &trans          &trans          &trans                      &trans      &trans                  &trans          &trans          &trans          &trans          &trans          &trans
-&trans  &trans          &trans          &trans          &trans                      &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans          &trans          &trans          &trans
+&trans  &trans          &trans          &trans          &trans          &trans          &trans                                      &trans  &trans          &trans          &trans          &trans          &trans          &trans
+&trans  &kp LS(LG(N1))  &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LG(LS(N5))  &trans                                      &trans  &kp LS(LG(N6))  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LS(LG(N0))  &trans
+&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)      &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(N6)      &kp LG(N7)      &kp LG(N8)      &kp LG(N9)      &kp LG(N0)      &trans
+&trans  &trans          &trans          &trans          &trans          &trans                          &trans      &trans                  &trans          &trans          &trans          &trans          &trans          &trans
+&trans  &trans          &trans          &trans          &trans                          &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans          &trans          &trans          &trans
             >;
         };
 
