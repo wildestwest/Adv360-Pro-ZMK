@@ -134,11 +134,11 @@
 
         symbol {
             bindings = <
-&none  &none            &none          &none             &none       &none  &none                                                  &none  &none  &none        &none                 &none                  &none        &none
-&none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp AMPS    &none  &none                                                  &none  &none  &kp LS(TAB)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT  &none
-&none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS          &kp EQUAL   &none  &none          &none      &none          &none  &none  &none  &none  &kp PIPE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &none
-&none  &kp CARET        &kp BACKSLASH  &kp POUND         &kp DOLLAR  &none                            &none          &none                &none  &kp TAB      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT       &none
-&none  &none            &none          &none             &none              &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none         &none        &none                 &none                  &none        &none
+&none  &none            &none          &none      &none       &none   &none                                                  &none  &none  &none              &none                 &none                  &none              &none
+&none  &kp PERCENT      &kp PIPE       &kp TILDE  &kp AMPS    &none   &none                                                  &none  &none  &kp SINGLE_QUOTE   &kp LESS_THAN         &kp GREATER_THAN       &none              &none
+&none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS   &kp EQUAL   &kp AT  &none          &none      &none          &none  &none  &none  &none  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none
+&none  &kp CARET        &kp BACKSLASH  &kp POUND  &kp DOLLAR  &none                             &none          &none                &none  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &none
+&none  &none            &none          &none      &none               &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none         &none              &none                 &none                  &none              &none
             >;
         };
 
