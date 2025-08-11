@@ -11,11 +11,11 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
+        email: email {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&none &kp W &kp E &kp S &kp T &kp O &kp N &kp DOT &kp H &kp U &kp L &kp L &kp A &kp N &kp D &kp E &kp R &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
         };
 
         #endif
@@ -26,12 +26,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <8 9 10 11 12 13 22 23 24 25 26 27 40 41 42 43 44 45 54 55 56 57 58 71 72 73 74 59 75 7 21 39 37 38 53 68 69 70 71>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
 
         hmr: hmr {
@@ -40,12 +40,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33 47 48 49 50 51 61 62 63 64 6 20 34 46 60 35 36 52 65 66 67>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
 
         layer_tap_cursor: layer_tap_cursor {
@@ -100,21 +100,14 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Sleep {
-            bindings = <&kp LG(LA(C_SLEEP))>;
-            key-positions = <0 13>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&to 6           &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &kp F24                                                                                                              &kp C_VOLUME_UP            &kp N6      &kp N7                &kp N8        &kp N9           &kp N0                 &to 6
+&to 6           &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &to 7                                                                                                                &kp C_VOLUME_UP            &kp N6      &kp N7                &kp N8        &kp N9           &kp N0                 &to 6
 &kp Q           &kp B        &kp Y            &kp O         &kp U              &kp SQT    &kp LG(C)                                                                                                            &kp C_VOLUME_DOWN          &kp SEMI    &kp L                 &kp D         &kp W            &kp V                  &kp Z
 &kp LEFT_SHIFT  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &kp LG(V)                      &bt BT_NXT               &out OUT_TOG      &kp C_PLAY_PAUSE  &kp C_NEXT               &kp C_MUTE                 &kp PERIOD  &hmr RIGHT_SHIFT H    &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N            &kp RIGHT_SHIFT
 &caps_word      &kp G        &kp X            &kp J         &kp K              &kp MINUS                                                          &kp LCTRL         &kp LEFT_ALT                                                          &kp FSLH    &kp R                 &kp M         &kp F            &kp P                  &kp GRAVE
@@ -134,11 +127,11 @@
 
         symbol {
             bindings = <
-&none  &none            &none          &none      &none       &none   &none                                                  &none  &none  &none              &none                 &none                  &none              &none
-&none  &kp PERCENT      &kp PIPE       &kp TILDE  &kp AMPS    &none   &none                                                  &none  &none  &kp SINGLE_QUOTE   &kp LESS_THAN         &kp GREATER_THAN       &none              &none
-&none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS   &kp EQUAL   &kp AT  &none          &none      &none          &none  &none  &none  &none  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none
-&none  &kp CARET        &kp BACKSLASH  &kp POUND  &kp DOLLAR  &none                             &none          &none                &none  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &none
-&none  &none            &none          &none      &none               &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none         &none              &none                 &none                  &none              &none
+&none  &none            &none          &none      &none       &none   &none                                                  &none  &none      &none              &none                 &none                  &none              &none
+&none  &kp PERCENT      &kp PIPE       &kp TILDE  &kp AMPS    &none   &none                                                  &none  &none      &kp SINGLE_QUOTE   &kp LESS_THAN         &kp GREATER_THAN       &none              &none
+&none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS   &kp EQUAL   &kp AT  &none          &none      &none          &none  &none  &none  &kp LG(C)  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none
+&none  &kp CARET        &kp BACKSLASH  &kp POUND  &kp DOLLAR  &email                            &none          &none                &kp LG(V)  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &none
+&none  &none            &none          &none      &none               &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none             &none              &none                 &none                  &none              &none
             >;
         };
 
@@ -179,6 +172,16 @@
 &kp Y   &kp J      &kp Q   &kp W   &kp E   &kp R   &kp T      &kp TAB   &kp ENTER      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp G   &kp LSHFT  &kp A   &kp S   &kp D   &kp F                        &kp I          &none                &none  &none  &none  &none  &none  &none
 &kp V   &kp LCTRL  &kp Z   &kp X   &kp C           &kp SPACE  &kp LALT  &kp ESC        &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        typing {
+            bindings = <
+&to 6           &kp N1    &kp N2     &kp N3     &kp N4   &kp N5     &to 0                                                                                                                &kp C_VOLUME_UP            &kp N6      &kp N7                &kp N8    &kp N9    &kp N0                 &to 6
+&kp Q           &kp B     &kp Y      &kp O      &kp U    &kp SQT    &kp LG(C)                                                                                                            &kp C_VOLUME_DOWN          &kp SEMI    &kp L                 &kp D     &kp W     &kp V                  &kp Z
+&kp LEFT_SHIFT  &kp C     &kp I      &kp E      &kp A    &kp COMMA  &kp LG(V)                      &bt BT_NXT               &out OUT_TOG      &kp C_PLAY_PAUSE  &kp C_NEXT               &kp C_MUTE                 &kp PERIOD  &kp H                 &kp T     &kp S     &kp N                  &kp RIGHT_SHIFT
+&caps_word      &kp G     &kp X      &kp J      &kp K    &kp MINUS                                                          &kp LCTRL         &kp LEFT_ALT                                                          &kp FSLH    &kp R                 &kp M     &kp F     &kp P                  &kp GRAVE
+&mo 1           &kp HOME  &kp PG_UP  &kp PG_DN  &kp END             &layer_tap_cursor 3 BACKSPACE  &layer_tap_num 4 ESCAPE  &kp DELETE        &kp TAB           &layer_tap_wksp 5 ENTER  &layer_tap_symbol 2 SPACE              &kp LEFT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_PARENTHESIS  &mo 1
             >;
         };
     };
