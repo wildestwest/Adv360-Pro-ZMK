@@ -11,12 +11,6 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        email: email {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp W &kp E &kp S &kp T &kp O &kp N &kp DOT &kp H &kp U &kp L &kp L &kp A &kp N &kp D &kp E &kp R &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL";
-        };
 
         #endif
 
@@ -97,9 +91,6 @@
         };
     };
 
-    macros {
-    };
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -130,7 +121,7 @@
 &none  &none            &none          &none      &none       &none   &none                                                  &none  &none      &none              &none                 &none                  &none              &none
 &none  &kp PERCENT      &kp PIPE       &kp TILDE  &kp AMPS    &none   &none                                                  &none  &none      &kp SINGLE_QUOTE   &kp LESS_THAN         &kp GREATER_THAN       &none              &none
 &none  &kp EXCLAMATION  &kp ASTERISK   &kp PLUS   &kp EQUAL   &kp AT  &none          &none      &none          &none  &none  &none  &kp LG(C)  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none
-&none  &kp CARET        &kp BACKSLASH  &kp POUND  &kp DOLLAR  &email                            &none          &none                &kp LG(V)  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &none
+&none  &kp CARET        &kp BACKSLASH  &kp POUND  &kp DOLLAR  &none                             &none          &none                &kp LG(V)  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &none
 &none  &none            &none          &none      &none               &kp BACKSPACE  &kp SPACE  &kp ENTER      &none  &none  &none             &none              &none                 &none                  &none              &none
             >;
         };
