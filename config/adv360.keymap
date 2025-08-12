@@ -89,6 +89,15 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15 29 30 16 17 31 32 18 19 33 22 40 41 23 24 42 25 43 26 44 51>;
         };
+
+        sticky_shift: sticky_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_SHIFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -98,11 +107,11 @@
 
         default_layer {
             bindings = <
-&to 6           &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &to 7                                                                                                                &kp C_VOLUME_UP            &kp N6      &kp N7                &kp N8        &kp N9           &kp N0                 &to 6
-&kp Q           &kp B        &kp Y            &kp O         &kp U              &kp SQT    &kp LG(C)                                                                                                            &kp C_VOLUME_DOWN          &kp SEMI    &kp L                 &kp D         &kp W            &kp V                  &kp Z
-&kp LEFT_SHIFT  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &kp LG(V)                      &bt BT_NXT               &out OUT_TOG      &kp C_PLAY_PAUSE  &kp C_NEXT               &kp C_MUTE                 &kp PERIOD  &hmr RIGHT_SHIFT H    &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N            &kp RIGHT_SHIFT
-&caps_word      &kp G        &kp X            &kp J         &kp K              &kp MINUS                                                          &kp LCTRL         &kp LEFT_ALT                                                          &kp FSLH    &kp R                 &kp M         &kp F            &kp P                  &kp GRAVE
-&mo 1           &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &layer_tap_cursor 3 BACKSPACE  &layer_tap_num 4 ESCAPE  &kp DELETE        &kp TAB           &layer_tap_wksp 5 ENTER  &layer_tap_symbol 2 SPACE              &kp LEFT_PARENTHESIS  &kp LBKT      &kp RBKT         &kp RIGHT_PARENTHESIS  &mo 1
+&to 6       &kp N1       &kp N2           &kp N3        &kp N4             &kp N5     &to 7                                                                                                                                     &kp C_VOLUME_UP            &kp N6      &kp N7                &kp N8        &kp N9           &kp N0                 &to 6
+&kp DELETE  &kp B        &kp Y            &kp O         &kp U              &kp SQT    &kp LG(C)                                                                                                                                 &kp C_VOLUME_DOWN          &kp SEMI    &kp L                 &kp D         &kp W            &kp V                  &kp TAB
+&kp Q       &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA  &kp LG(V)                      &bt BT_NXT               &out OUT_TOG                  &kp C_PLAY_PAUSE           &kp C_NEXT               &kp C_MUTE                 &kp PERIOD  &hmr RIGHT_SHIFT H    &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N            &kp Z
+&caps_word  &kp G        &kp X            &kp J         &kp K              &kp MINUS                                                          &kp DELETE                    &kp TAB                                                                        &kp FSLH    &kp R                 &kp M         &kp F            &kp P                  &kp GRAVE
+&mo 1       &kp HOME     &kp PG_UP        &kp PG_DN     &kp END                       &layer_tap_cursor 3 BACKSPACE  &layer_tap_num 4 ESCAPE  &sticky_shift LEFT_SHIFT      &sticky_shift RIGHT_SHIFT  &layer_tap_wksp 5 ENTER  &layer_tap_symbol 2 SPACE              &kp LEFT_PARENTHESIS  &kp LBKT      &kp RBKT         &kp RIGHT_PARENTHESIS  &mo 1
             >;
         };
 
