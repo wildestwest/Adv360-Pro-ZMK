@@ -105,14 +105,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        capswordlock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <52 53>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -129,8 +122,8 @@
 
         sys {
             bindings = <
-&to 6        &none         &kp F2        &kp F3        &kp F4        &kp F5  &trans                                                &trans           &kp F6  &kp F7      &kp F8             &kp F9        &none                        &to 6
-&trans       &trans        &trans        &trans        &trans        &trans  &trans                                                &trans           &trans  &trans      &trans             &trans        &trans                       &trans
+&to 6        &to 8         &kp F2        &kp F3        &kp F4        &kp F5  &trans                                                &trans           &kp F6  &kp F7      &kp F8             &kp F9        &to 8                        &to 6
+&to 0        &trans        &trans        &trans        &trans        &trans  &trans                                                &trans           &trans  &trans      &trans             &trans        &trans                       &to 0
 &none        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans      &trans  &trans      &trans           &trans  &trans      &trans             &trans        &trans                       &bt BT_CLR
 &bootloader  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                               &trans  &trans      &trans             &trans        &mt LS(BACKSLASH) BACKSLASH  &bootloader
 &bootloader  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &bt BT_SEL 0  &trans      &tog 1  &bl BL_TOG  &rgb_ug RGB_TOG          &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT                   &bootloader
@@ -194,6 +187,16 @@
 &kp POUND  &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTRK     &none        &kp BACKSLASH  &kp PERIOD      &none  &none  &none  &kp DOUBLE_QUOTES  &kp BACKSPACE  &kp TAB  &kp SPACE  &kp ENTER  &none
 &kp TILDE  &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                 &kp ASTRK       &none                &kp SINGLE_QUOTE   &none          &none    &none      &none      &none
 &none      &kp AMPS          &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp PLUS                         &kp PERCENT  &kp COLON      &kp AT          &none  &none  &none                     &none          &none    &none      &none      &none
+            >;
+        };
+
+        enthium {
+            bindings = <
+&kp PG_UP                 &kp N1            &kp N2                &kp N3                 &kp N4                    &kp N5     &kp C_VOL_DN                                                                                                         &kp C_VOLUME_UP        &kp N6  &kp N7                     &kp N8        &kp N9           &kp N0         &kp BACKSLASH
+&kp PAGE_DOWN             &kp B             &kp Y                 &kp O                  &kp U                     &kp SEMI   &kp C_PLAY_PAUSE                                                                                                     &kp C_NEXT             &kp X   &kp L                      &kp D         &kp W            &kp V          &caps_word
+&kp Z                     &hml LGUI C       &hml LEFT_ALT I       &hml LCTRL E           &hml LEFT_SHIFT A         &kp COMMA  &kp C_MUTE                 &kp UP_ARROW             &kp DOWN_ARROW      &kp LEFT_ARROW  &kp RIGHT                    &out OUT_TOG           &kp K   &hmr RIGHT_SHIFT H         &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N    &kp Q
+&sticky_shift LEFT_SHIFT  &kp SINGLE_QUOTE  &kp MINUS             &kp EQUAL              &kp PERIOD                &kp SLASH                                                      &caps_word          &kp DELETE                                                          &kp J   &kp M                      &kp G         &kp P            &kp F          &sticky_shift RIGHT_SHIFT
+&mo 1                     &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sticky_shift LEFT_SHIFT             &layer_tap_cursor 3 SPACE  &layer_tap_num 4 ESCAPE  &kp TAB             &kp ENTER       &layer_tap_wksp 5 BACKSPACE  &layer_tap_symbol 7 R          &sticky_shift RIGHT_SHIFT  &kp LBKT      &kp RBKT         &kp BACKSLASH  &mo 1
             >;
         };
     };
