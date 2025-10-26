@@ -152,7 +152,7 @@
 
         enthium {
             bindings = <
-&none            &kp N1            &kp N2                &kp N3                 &kp N4             &kp N5     &email                                                                                                              &out OUT_TOG           &kp N6  &kp N7              &kp N8        &kp N9           &kp N0         &none
+&to 5            &kp N1            &kp N2                &kp N3                 &kp N4             &kp N5     &email                                                                                                              &out OUT_TOG           &kp N6  &kp N7              &kp N8        &kp N9           &kp N0         &to 7
 &kp HOME         &kp Z             &kp Y                 &kp O                  &kp U              &kp SEMI   &bt BT_SEL 0                                                                                                        &bt BT_SEL 1           &kp X   &kp L               &kp D         &kp W            &kp V          &kp END
 &kp B            &hml LGUI C       &hml LEFT_ALT I       &hml LCTRL E           &hml LEFT_SHIFT A  &kp COMMA  &bt BT_SEL 2               &kp K_COPY               &kp K_PASTE      &voldown_pp_mute  &volup_next                  &bt BT_SEL 3           &kp K   &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N    &kp Q
 &kp EXCLAMATION  &kp SINGLE_QUOTE  &kp MINUS             &kp EQUAL              &kp PERIOD         &kp SLASH                                                      &caps_word       &kp DELETE                                                            &kp J   &kp M               &kp G         &kp P            &kp F          &kp BACKSLASH
@@ -222,7 +222,7 @@
 
         type {
             bindings = <
-&none            &kp N1            &kp N2                &kp N3                 &kp N4            &kp N5     &email                                                                      &out OUT_TOG  &kp N6  &kp N7            &kp N8    &kp N9    &kp N0         &none
+&to 0            &kp N1            &kp N2                &kp N3                 &kp N4            &kp N5     &email                                                                      &out OUT_TOG  &kp N6  &kp N7            &kp N8    &kp N9    &kp N0         &none
 &kp HOME         &kp Z             &kp Y                 &kp O                  &kp U             &kp SEMI   &bt BT_SEL 0                                                                &bt BT_SEL 1  &kp X   &kp L             &kp D     &kp W     &kp V          &kp END
 &kp B            &kp C             &kp I                 &kp E                  &kp A             &kp COMMA  &bt BT_SEL 2  &kp K_COPY  &kp K_PASTE      &voldown_pp_mute  &volup_next    &bt BT_SEL 3  &kp K   &kp H             &kp T     &kp S     &kp N          &kp Q
 &kp EXCLAMATION  &kp SINGLE_QUOTE  &kp MINUS             &kp EQUAL              &kp PERIOD        &kp SLASH                            &caps_word       &kp DELETE                                     &kp J   &kp M             &kp G     &kp P     &kp F          &kp BACKSLASH
