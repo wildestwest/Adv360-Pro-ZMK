@@ -138,24 +138,15 @@
         };
     };
 
-    macros {
-        email: email {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp U &kp B &kp S &kp AT &kp B &kp U &kp B &kp S &kp DOT &kp P &kp R &kp O>;
-            label = "EMAIL";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         enthium {
             bindings = <
 &to 5            &kp N1            &kp N2                &kp N3                 &kp N4             &kp N5     &email                                                                                                              &out OUT_TOG           &kp N6  &kp N7              &kp N8        &kp N9           &kp N0         &to 7
-&kp HOME         &kp Z             &kp Y                 &kp O                  &kp U              &kp SEMI   &bt BT_SEL 0                                                                                                        &bt BT_SEL 1           &kp X   &kp L               &kp D         &kp W            &kp V          &kp END
-&kp B            &hml LGUI C       &hml LEFT_ALT I       &hml LCTRL E           &hml LEFT_SHIFT A  &kp COMMA  &bt BT_SEL 2               &kp K_COPY               &kp K_PASTE      &voldown_pp_mute  &volup_next                  &bt BT_SEL 3           &kp K   &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT S  &hmr RGUI N    &kp Q
-&kp EXCLAMATION  &kp SINGLE_QUOTE  &kp MINUS             &kp EQUAL              &kp PERIOD         &kp SLASH                                                      &caps_word       &kp DELETE                                                            &kp J   &kp M               &kp G         &kp P            &kp F          &kp BACKSLASH
+&kp HOME         &kp Q             &kp Y                 &kp O                  &kp U              &kp EQUAL  &bt BT_SEL 0                                                                                                        &bt BT_SEL 1           &kp X   &kp L               &kp D         &kp W            &kp Z          &kp END
+&kp B            &hml LGUI C       &hml LEFT_ALT I       &hml LCTRL A           &hml LEFT_SHIFT E  &kp MINUS  &bt BT_SEL 2               &kp K_COPY               &kp K_PASTE      &voldown_pp_mute  &volup_next                  &bt BT_SEL 3           &kp K   &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT N  &hmr RGUI S    &kp F
+&kp EXCLAMATION  &kp SINGLE_QUOTE  &kp COMMA             &kp PERIOD             &kp SEMI           &kp SLASH                                                      &caps_word       &kp DELETE                                                            &kp J   &kp M               &kp G         &kp P            &kp V          &kp BACKSLASH
 &mo 1            &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &shift_caps_word              &layer_tap_cursor 2 SPACE  &layer_tap_num 3 ESCAPE  &kp TAB          &kp ENTER         &layer_tap_wksp 4 BACKSPACE  &layer_tap_symbol 6 R          &shift_caps_word    &kp LBKT      &kp RBKT         &kp BACKSLASH  &mo 1
             >;
         };
@@ -222,11 +213,11 @@
 
         type {
             bindings = <
-&to 0            &kp N1            &kp N2                &kp N3                 &kp N4            &kp N5     &email                                                                      &out OUT_TOG  &kp N6  &kp N7            &kp N8    &kp N9    &kp N0         &none
-&kp HOME         &kp Z             &kp Y                 &kp O                  &kp U             &kp SEMI   &bt BT_SEL 0                                                                &bt BT_SEL 1  &kp X   &kp L             &kp D     &kp W     &kp V          &kp END
-&kp B            &kp C             &kp I                 &kp E                  &kp A             &kp COMMA  &bt BT_SEL 2  &kp K_COPY  &kp K_PASTE      &voldown_pp_mute  &volup_next    &bt BT_SEL 3  &kp K   &kp H             &kp T     &kp S     &kp N          &kp Q
-&kp EXCLAMATION  &kp SINGLE_QUOTE  &kp MINUS             &kp EQUAL              &kp PERIOD        &kp SLASH                            &caps_word       &kp DELETE                                     &kp J   &kp M             &kp G     &kp P     &kp F          &kp BACKSLASH
-&mo 1            &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &shift_caps_word             &kp SPACE     &kp ESC     &kp TAB          &kp ENTER         &kp BACKSPACE  &kp R                 &shift_caps_word  &kp LBKT  &kp RBKT  &kp BACKSLASH  &mo 1
+&to 0            &kp N1            &kp N2                &kp N3                 &kp N4            &kp N5     &out OUT_USB                                                                      &out OUT_BLE  &kp N6  &kp N7            &kp N8    &kp N9    &kp N0         &none
+&kp HOME         &kp Q             &kp Y                 &kp O                  &kp U             &kp EQUAL  &bt BT_SEL 0                                                                      &bt BT_SEL 1  &kp X   &kp L             &kp D     &kp W     &kp Z          &kp END
+&kp B            &kp C             &kp I                 &kp A                  &kp E             &kp MINUS  &bt BT_SEL 2  &kp C_AC_COPY  &kp C_AC_PASTE      &voldown_pp_mute  &volup_next    &bt BT_SEL 3  &kp K   &kp H             &kp T     &kp N     &kp S          &kp F
+&kp EXCLAMATION  &kp SINGLE_QUOTE  &kp COMMA             &kp DOT                &kp SEMI          &kp SLASH                               &caps_word          &kp DELETE                                     &kp J   &kp M             &kp G     &kp P     &kp V          &kp BACKSLASH
+&mo 1            &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &shift_caps_word             &kp SPACE     &kp ESC        &kp TAB             &kp ENTER         &kp BACKSPACE  &kp R                 &shift_caps_word  &kp LBKT  &kp RBKT  &kp BACKSLASH  &mo 1
             >;
         };
     };
