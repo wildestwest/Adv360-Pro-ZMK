@@ -143,7 +143,7 @@
 
         enthium {
             bindings = <
-&to 5            &kp N1            &kp N2                &kp N3                 &kp N4             &kp N5     &email                                                                                                              &out OUT_TOG           &kp N6  &kp N7              &kp N8        &kp N9           &kp N0         &to 7
+&to 5            &kp N1            &kp N2                &kp N3                 &kp N4             &kp N5     &out OUT_USB                                                                                                        &out OUT_TOG           &kp N6  &kp N7              &kp N8        &kp N9           &kp N0         &to 7
 &kp HOME         &kp Q             &kp Y                 &kp O                  &kp U              &kp EQUAL  &bt BT_SEL 0                                                                                                        &bt BT_SEL 1           &kp X   &kp L               &kp D         &kp W            &kp Z          &kp END
 &kp B            &hml LGUI C       &hml LEFT_ALT I       &hml LCTRL A           &hml LEFT_SHIFT E  &kp MINUS  &bt BT_SEL 2               &kp K_COPY               &kp K_PASTE      &voldown_pp_mute  &volup_next                  &bt BT_SEL 3           &kp K   &hmr RIGHT_SHIFT H  &hmr RCTRL T  &hmr LEFT_ALT N  &hmr RGUI S    &kp F
 &kp EXCLAMATION  &kp SINGLE_QUOTE  &kp COMMA             &kp PERIOD             &kp SEMI           &kp SLASH                                                      &caps_word       &kp DELETE                                                            &kp J   &kp M               &kp G         &kp P            &kp V          &kp BACKSLASH
